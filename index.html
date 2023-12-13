@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>FACTORIAL CALCULATOR</h1>
+        <label for="factorial">Enter a non-negative intiger : </label>
+        <input id="factorial" type="text">
+        <button class="bt" onclick="intiger()">calculate factorial</button>
+        <h2 id="result"></h2>
+    </div>
+    <script>
+        function intiger() {
+            var numberInput = document.getElementById("factorial");
+            var number = parseInt(numberInput.value);
+
+
+            var result = factorial(number);
+            function factorial(n) {
+                if (n === 0 || n === 1) {
+                    return 1;
+                } else {
+                    return n * factorial(n - 1);
+                }
+            }
+
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = 'Factorial of ' + number + ' is: ' + result;
+
+
+        }
+    </script>
+</body>
+
+</html>

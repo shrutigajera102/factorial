@@ -1,0 +1,29 @@
+div{
+    background-image: url(360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    margin: 100px;
+    margin-left: 25%;
+    border-radius: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+h1 {
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.bt {
+    width: 20%;
+    height: 5vh;
+border-radius: 5px;
+}
+#factorial{
+    width: 180px;
+    height: 20px;
+    border-radius: 5px;
+}
+label{
+    font-size: large;
+}
